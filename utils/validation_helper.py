@@ -264,8 +264,8 @@ def validate_parent_guide_nudity(metadata, user_data: schemas.UserData) -> bool:
     Returns False if the content should be filtered out based on user preferences.
     """
     # Strict policy for adult genres.
-    if metadata.genres and "Adult" in metadata.genres:
-        return False
+    """if metadata.genres and "Adult" in metadata.genres:
+        return False"""
 
     # Skip validation if filters are disabled
     if (
